@@ -60,11 +60,12 @@ Go through this file line-by-line and replace the template values with your own.
   
     <!-- My project metadata here -->
     <properties>
-        <!-- Obviously put in your own project name instead of `myproject` -->
-        <project-name>myproject</project-name>
+        <project-name>dd-search</project-name>
 
-        <!-- You'll want a Unicode-type encoding here in almost every case -->
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+
+        <!-- Java 17 LTS -->
+        <maven.compiler.release>17</maven.compiler.release>
     </properties>
 
     <!--
@@ -76,7 +77,7 @@ Go through this file line-by-line and replace the template values with your own.
     The next part of the Maven coorindate is the name of the artifact, its "artifact ID". Note we cannot use
     any expression here, as tempting as it would be to use ${project-name} here:
     -->
-    <artifactId>myproject</artifactId>
+    <artifactId>dd-search</artifactId>
     <!-- The third part of the Maven coorindate is the version identifier of the artifact: -->
     <version>0.2.0-SNAPSHOT</version>
     <!-- The final part is the kind: here we make a `jar`, but there's `war`, `ejb`, `ear`, `maven-plugin`, etc.: -->
@@ -84,7 +85,9 @@ Go through this file line-by-line and replace the template values with your own.
 
     <name>${project.groupId}:${project-name}</name>
     <description>
-        Put a short paragraph-sized summary of the project here.
+        PDS4 Data Dictionary Search — standalone Java tool that transforms a PDS4 Data Dictionary
+        DocBook XML file into a self-contained, searchable static HTML site styled with the
+        NASA Horizon Design System.
     </description>
     <!-- Check the calendar -->
     <inceptionYear>2021</inceptionYear>

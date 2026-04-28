@@ -168,7 +168,7 @@ Search results must display: item name, type (class/attribute), namespace, and a
 
 | Component | Technology |
 |-----------|-----------|
-| Core tool | Java 11+, Maven |
+| Core tool | Java 17+, Maven |
 | DocBook parsing | Apache Xerces / standard Java XML (JAXP) |
 | HTML generation | Apache Velocity templates or similar (no Thymeleaf server dependency) |
 | Client-side search | Fuse.js (CDN or bundled) |
@@ -200,7 +200,7 @@ java -jar dd-search.jar -o ./site -V 1Q00 PDS4_PDS_DD_1Q00.xml
 | NFR-01 | Performance | Initial page load < 3 seconds on a standard connection |
 | NFR-02 | Performance | Search results appear within 500ms of keystroke |
 | NFR-03 | Accessibility | Output meets WCAG 2.1 Level AA |
-| NFR-04 | Portability | Tool runs on any platform with Java 11+ (no OS-specific dependencies) |
+| NFR-04 | Portability | Tool runs on any platform with Java 17+ (no OS-specific dependencies) |
 | NFR-05 | Deployability | Output is self-contained static files (no server required) |
 | NFR-06 | Maintainability | No dependency on commercial tools (Oxygen, DocBook toolchain) |
 | NFR-07 | Compatibility | Generates output for all supported IM versions (1B00–current) |
@@ -236,7 +236,7 @@ The following requirements are tracked as individual GitHub issues in this repos
 | ID | Title |
 |----|-------|
 | REQ-NF-01 | No commercial tool dependencies |
-| REQ-NF-02 | Standalone Java CLI (Java 11+) |
+| REQ-NF-02 | Standalone Java CLI (Java 17+) |
 | REQ-NF-03 | Output is self-contained static files |
 | REQ-NF-04 | Initial page load under 3 seconds |
 | REQ-NF-05 | Search response under 500ms |
