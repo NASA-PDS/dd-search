@@ -230,6 +230,16 @@ The following requirements are tracked as individual GitHub issues in this repos
 | REQ-F-11 | Display permissible values on attribute detail pages |
 | REQ-F-12 | Indicate deprecated, abstract, and nillable items visually |
 | REQ-F-13 | Define extensible parser interface for future input formats |
+| REQ-F-14 | Display complete attribute metadata (Class Name, Min/Max Characters, Unit of Measure Type, Default Unit Id, Attribute Concept, Conceptual Domain, Pattern) |
+| REQ-F-15 | Display full class hierarchy chain (ancestor breadcrumb) |
+| REQ-F-16 | Provide alphabetical index across all classes and attributes |
+| REQ-F-17 | Provide Prev/Next sequential page navigation |
+| REQ-F-18 | Highlight search terms when landing on a page from search results |
+| REQ-F-19 | Render introductory front-matter content (Audience, Scope, Terminology, etc.) |
+| REQ-F-20 | Sub-categorize common namespace classes into Product, Support, and OPS Catalog |
+| REQ-F-21 | Display DD Version and IM Version on each class and attribute page |
+
+> **Note**: REQ-F-14 through REQ-F-21 were identified by auditing the existing WebHelp at https://pds.nasa.gov/datastandards/documents/dd/all/current/ to ensure feature parity.
 
 ### 4.2 Non-Functional Requirements
 
